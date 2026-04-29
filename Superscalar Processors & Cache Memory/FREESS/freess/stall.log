@@ -1,0 +1,32 @@
+@003 stall due to no S-unit available for SW/002
+@003 stall due to no S-unit available for SW/002
+@003 stall due to no S-unit available for SW/002
+@005 stall due to DATA_WAIT in C when moving ADDI/003 from W to C.
+@005 stall due to no S-unit available for SW/007
+@005 stall due to no S-unit available for SW/007
+@005 stall due to no S-unit available for SW/007
+@005 stall due to Physical registers not available
+@005 stall due to DATA_WAIT in D when moving MUL/011 from F to D.
+@006 stall due to DATA_WAIT in C when moving ADDI/003 from W to C.
+@006 stall due to ROB full
+@006 stall due to NO_ROB_SLOTS in P when moving LW/010 from D to P.
+@006 stall due to Physical registers not available
+@006 stall due to DATA_WAIT in D when moving MUL/011 from F to D.
+@007 stall due to Physical registers not available
+@007 stall due to DATA_WAIT in D when moving MUL/011 from F to D.
+@008 stall due to Physical registers not available
+@008 stall due to DATA_WAIT in D when moving MUL/011 from F to D.
+@009 stall due to DATA_WAIT in C when moving LW/005 from W to C.
+@009 stall due to Physical registers not available
+@009 stall due to DATA_WAIT in D when moving MUL/011 from F to D.
+@010 stall due to DATA_WAIT in C when moving LW/005 from W to C.
+@010 stall due to Physical registers not available
+@010 stall due to DATA_WAIT in D when moving MUL/011 from F to D.
+@011 stall due to DATA_WAIT in C when moving LW/005 from W to C.
+@011 stall due to Physical registers not available
+@011 stall due to DATA_WAIT in D when moving MUL/011 from F to D.
+@012 stall due to Physical registers not available
+@012 stall due to DATA_WAIT in D when moving ADDI/013 from F to D.
+@017 stall due to DATA_WAIT in C when moving ADDI/013 from W to C.
+@018 stall due to DATA_WAIT in C when moving ADDI/013 from W to C.
+@019 stall due to DATA_WAIT in C when moving ADDI/013 from W to C.

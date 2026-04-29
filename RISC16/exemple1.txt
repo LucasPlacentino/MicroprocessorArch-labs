@@ -1,0 +1,36 @@
+// This is a comment
+// 0x prefix for hex immediate value
+// before instructions, @ prefix to set an instruciton at a specific address
+// labels, e.g here "boucle"
+
+		addi 	2,0,1 // immediate value 1 added with 0 into reg2
+		sw   	2,1,0 // store word from reg2 into address @reg1+immediate0
+		addi 	1,1,1 // immediate value 1 added with reg1 into reg1
+		sw   	2,1,0 // store word from reg2 into address @reg1+immediate0
+		addi 	1,1,1 // immediate value 1 added with reg1 into reg1
+		add  	3,2,2 // add reg2 with reg2 into reg3
+		sw   	3,1,0 // store word from reg3 into address @reg1+immediate0
+		addi 	1,1,1 // immediate value 1 added with reg1 into reg1
+		addi 	7,0,7 // immediate value 7 added with 0 (reg0) into reg7
+boucle: beq  	7,0,end // compares reg7 with reg0 (value0), if true, PC updated to value PC_BEQ+1+immediate(end), else next line (PC+1)
+		lw	2,1,-2 // load word from address @reg1+immediate(-2) into reg2
+		add 	3,3,2 // add reg3 with reg2 into reg3
+		sw   	3,1,0 // store word from reg3 into address @reg1+immediate0
+		addi 	1,1,1 // immediate value 1 added with reg1 into reg1
+		addi 	7,7,-1 // immediate value -1 added with reg7 into reg7
+		beq  	0,0,boucle // compares reg0 (value 0) with reg0 (value 0), if true, update to value PC_BEQ+1+immediate(@boucle), else next line (never happens, always true)
+end:	halt // stops simulation
+
+
+// ...
+// reg7 = 7; // i=7
+// while (reg7 != 0) { // or reg7 != reg0 or reg7 == TRUE
+//     ...
+//     reg7 -= 1; // i--;
+// } // loops 7 times
+// halt();
+
+// //or
+// for i = 1:7
+// 
+// endfor
